@@ -1,0 +1,23 @@
+{
+  "name": "slow-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slow-crawler.js",
+  "scripts": {
+    "crawl:popular": "node ./slow-crawler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zieka/slow-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zieka/slow-crawler/issues"
+  },
+  "homepage": "https://github.com/zieka/slow-crawler#readme",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "puppeteer": "^13.1.3"
+  }
+}
