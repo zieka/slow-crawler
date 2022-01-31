@@ -3,7 +3,7 @@ name: Crawl Popular
 on: workflow_dispatch
 
 jobs:
-  Run crawler:
+  run_crawler:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
