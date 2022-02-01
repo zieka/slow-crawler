@@ -24,6 +24,12 @@ const alpha = argv['alpha'];
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
+  // set user agent (override the default headless User Agent)
+  await page.setUserAgent(
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.0 Safari/537.36'
+  );
+
   await page.goto(entryPoint);
 
   const gotoMethodsOnCurrentPage = async () => {
